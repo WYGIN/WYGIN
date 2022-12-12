@@ -32,3 +32,7 @@ export function getCachedDataByUID(
 
   return client.getByUID(customType, uid, params);
 }
+// app/utils/prismicio.server.ts
+export function removePrismicDocFromCache(uid: string) {
+  prismicCache.delete(uid)
+}
