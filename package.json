@@ -7,7 +7,9 @@
     "dev:wrangler": "cross-env NODE_ENV=development wrangler pages dev ./public",
     "dev": "remix build && run-p \"dev:*\"",
     "start": "cross-env NODE_ENV=production npm run dev:wrangler",
-    "typecheck": "tsc -b"
+    "typecheck": "tsc -b",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "slicemachine": "start-slicemachine"
   },
   "dependencies": {
     "@remix-run/cloudflare": "^1.8.2",
