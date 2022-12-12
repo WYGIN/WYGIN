@@ -1,5 +1,5 @@
 // app/routes/$uid.tsx
-import { redirect } from "@remix-run/node";
+import { redirect } from "@remix-run/cloudflare";
 
 export const loader: LoaderFunction = async ({
   params,
