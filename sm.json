@@ -1,0 +1,7 @@
+{
+  "apiEndpoint": "https://wygin.prismic.io/api/v2",
+  "libraries": [
+    "@/slices"
+  ],
+  "framework": "none"
+}
