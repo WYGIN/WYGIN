@@ -19,12 +19,14 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^3.18.0",
+    "@prismicio/types": "^0.2.4",
     "@remix-run/dev": "^1.8.2",
     "@remix-run/eslint-config": "^1.8.2",
     "@types/react": "^17.0.52",
     "@types/react-dom": "^17.0.18",
     "eslint": "^8.27.0",
     "npm-run-all": "^4.1.5",
+    "prismic-ts-codegen": "^0.1.5",
     "typescript": "^4.8.4",
     "wrangler": "^2.2.1"
   },
