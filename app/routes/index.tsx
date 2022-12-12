@@ -1,8 +1,8 @@
 // app/routes/index.tsx
 import { SliceZone } from "@prismicio/react";
 import type { PrismicDocument } from "@prismicio/types";
-import type { LoaderFunction } from "@remix-run/node";
-import { json } from "@remix-run/node";
+import type { LoaderFunction } from "@remix-run/cloudflare";
+import { json } from "@remix-run/cloudflare";
 import { useLoaderData } from "@remix-run/react";
 import Hero from "slices/Hero";
 import { getPrismicClient } from "~/utils/prismicio";
