@@ -1,6 +1,6 @@
 // app/routes/prismic/webhook.tsx
-import type { ActionFunction } from "@remix-run/node";
-import { json } from "@remix-run/node";
+import type { ActionFunction } from "@remix-run/cloudflare";
+import { json } from "@remix-run/cloudflare";
 import { getPrismicClient } from "~/utils/prismicio";
 import { addPrismicDocToCache } from "~/utils/prismicio.server";
 
