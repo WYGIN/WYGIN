@@ -1,4 +1,6 @@
-import type { MetaFunction } from "@remix-run/cloudflare";
+// app/root.tsx
+import { PrismicProvider } from "@prismicio/react";
+import type { MetaFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -22,7 +24,9 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        <PrismicProvider>
+          <Outlet />
+        </PrismicProvider>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
