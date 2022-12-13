@@ -22,9 +22,16 @@ export function CatchBoundary() {
 }
 
 export const loader = async () => {
+  let dateOfPosts = new Date();
+  dateOfPosts.setMonth(dateOfPosts.getMonth() - 3);
   const indexPage = await client.getAllByType("post", {
+    graphQuery: `
+      {
+
+      }
+    `,
     predicates: [
-      prismic.predicate.dateYear( 'document.last_publication_date', '2023' )
+      prismic.predicate.dateBefore( 'document.last_publication_date', dateOfMonth.toISOString().substring(0, 10) )
     ]
   });
   return json({ indexPage })
