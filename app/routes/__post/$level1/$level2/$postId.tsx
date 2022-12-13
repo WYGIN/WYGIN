@@ -1,7 +1,20 @@
 import { client } from "../utils/PrismicClient";
 
+import type { MetaFunction } from "@remix-run/cloudflare"; // or cloudflare/deno
+import type { LinksFunction } from "@remix-run/cloudflare"; // or cloudflare/deno
+
+export const links: LinksFunction = () => {
+  return []
+}
+
+export const meta: MetaFunction = () => {
+  return {
+    
+  };
+};
+
 export const loader = async({ params }) => {
-  const postData = client.getByUID('post', params.postId, {
+  const postData = await client.getByUID('post', params.postId, {
     graphQuery: `
       {
         
