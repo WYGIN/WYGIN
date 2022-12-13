@@ -1,4 +1,4 @@
-export const loader = async() => {
+export const loader = async({ params }) => {
   
 }
 export default function Post() {
