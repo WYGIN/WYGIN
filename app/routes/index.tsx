@@ -6,6 +6,13 @@ import { client } from "../utils/PrismicClient";
 import * as prismic from "@prismicio/client";
 
 import { useCatch } from "@remix-run/react";
+import type { MetaFunction } from "@remix-run/cloudflare";
+
+export const meta: MetaFunction<typeof loader> = ({ data, params }) => {
+  return {
+    
+  };
+}
 
 export function CatchBoundary() {
   const caught = useCatch();
@@ -27,7 +34,37 @@ export const loader = async () => {
   const indexPage = await client.getAllByType("post", {
     graphQuery: `
       {
-
+        post {
+          title
+          body
+          featured_image
+          category {
+            ...on category {
+              level0
+              level1
+              level2
+            }
+          }
+          tags {
+            tag {
+              ...on tag {
+                label
+              }
+            }
+          }
+          author {
+            ...on author {
+              name
+              profile
+              _meta {
+                uid
+              }
+            }
+          }
+          _meta {
+            uid
+          }
+        }
       }
     `,
     predicates: [
