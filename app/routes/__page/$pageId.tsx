@@ -17,8 +17,11 @@ import { client } from "../utils/PrismicClient";
    const postData = await client.getByUID('page', params.pageId, { 
      graphQuery: ` 
        { 
-          
-       } 
+          page {
+            title
+            body
+          }
+       } 
      `, 
      predicates: [ 
         
@@ -31,7 +34,9 @@ import { client } from "../utils/PrismicClient";
  } 
   
  export default function Page() { 
-   return (); 
+   return (
+     
+   ); 
  } 
   
  export function CatchBoundary() { 
