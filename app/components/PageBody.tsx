@@ -1,3 +1,3 @@
-export default function PostBody({data}: {data!: object}) {
+export default function PageBody({data}: {data!: object}) {
   return();
 }
