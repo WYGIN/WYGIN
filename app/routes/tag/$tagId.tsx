@@ -14,7 +14,7 @@ import { client } from "../utils/PrismicClient";
  }; 
   
  export const loader = async({ params }) => { 
-   const postData = await client.getByUID('tag', params.tagId, { 
+   const postData = await client.get({ 
      graphQuery: ` 
        { 
           
@@ -24,7 +24,7 @@ import { client } from "../utils/PrismicClient";
         
      ] 
    }); 
-   if(!postData || !postData.keys('post').length) { 
+   if(!postData || !Objects.keys(postData.post).length || !postData.post) { 
      throw new Response("", { status: 404 }); 
    } 
    return json(postData); 
