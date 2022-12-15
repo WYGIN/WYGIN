@@ -1,22 +1,24 @@
 export default function Footer( { data }: {data!: object} ) {
   return(
     <footer className='p-4 bg-white sm:p-6 dark:bg-gray-900'>
-      <div class="md:flex md:justify-between">
-        <div class="mb-6 md:mb-0">
-          <a href="https://www.wygin.com/" class="flex items-center">
-            <img src="https://wygin.com/favicon.ico" class="mr-3 h-8" alt="WYGIN Logo" />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">WYGIN</span>
+      <div className="md:flex md:justify-between">
+        <div className="mb-6 md:mb-0">
+          <a href="https://www.wygin.com/" className="flex items-center">
+            <img src="https://wygin.com/favicon.ico" className="mr-3 h-8" alt="WYGIN Logo" />
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">WYGIN</span>
           </a>
         </div>
-        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           {
             data.body1.footerGroup.forEach((group) => {
               <div>
-                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">{group.title}</h2> 
-                <ul class = "text-gray-600 dark:text-gray-400" >
+                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">{group.title}</h2> 
+                <ul className= "text-gray-600 dark:text-gray-400" >
                   {
                     group.links.forEach((link) => {
-                      <li></li>
+                      <li className='mb-4'>
+                        <a href={link.link} className="no-underline hover:underline">{link.label}</a>
+                      </li>
                     })
                   }
                 </ul>
