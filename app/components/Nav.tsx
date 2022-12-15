@@ -9,6 +9,7 @@ export default function Nav({data}: {data!: object}) {
                 <div className='flex align-middle box-border'>
                   <button type='submit' className='bg-white rounded-tl-md rounded-bl-md transition-all text-sm inline-block mb-0 text-center align-middle py-1.5 px-3 m-0 box-border'>{/*search icon*/}
                     {/*<img src="https://www.baeldung.com/wp-content/plugins/baeldung-menu//img/search.svg"/>*/}
+                    <FontAwesomeIcon icon="fa-regular fa-magnifying-glass" />
                   </button>
                   <input className='border-0 text-lg w-full table-cell align-middle rounded-none py-0 px-3' placeholder='Search' type='text' />
                   <span className='w-auto table-cell align-middle box-border'>
