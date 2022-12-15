@@ -9,15 +9,19 @@ export default function Footer( { data }: {data!: object} ) {
           </a>
         </div>
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-          {data.body1.footerGroup.forEach((group) => {
-          
-          })
-          <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2> 
-            <ul class = "text-gray-600 dark:text-gray-400" >
-              {/* link list here with hover:underline */}
-            </ul>
-          </div>
+          {
+            data.body1.footerGroup.forEach((group) => {
+              <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">{group.title}</h2> 
+                <ul class = "text-gray-600 dark:text-gray-400" >
+                  {
+                    group.links.forEach((link) => {
+                      <li></li>
+                    })
+                  }
+                </ul>
+              </div>
+            })          
           }
         </div>
       </div>
