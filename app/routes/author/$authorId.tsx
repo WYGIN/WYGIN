@@ -1,4 +1,11 @@
-import { client } from "~/utils/PrismicClient";
+import type { LoaderArgs } from "@remix-run/cloudflare";
+import { json } from "@remix-run/cloudflare";
+import { useLoaderData } from "@remix-run/react";
+
+import { client } from "../utils/PrismicClient";
+import * as prismic from "@prismicio/client";
+
+import { useCatch } from "@remix-run/react";
 import PostCardLayout from "~/components/PostCardLayout";
   
  import type { MetaFunction } from "@remix-run/cloudflare"; // or cloudflare/deno 
@@ -19,7 +26,7 @@ import PostCardLayout from "~/components/PostCardLayout";
   /* if(!postData || !Object.keys('author').length) { 
      throw new Response("", { status: 404 }); 
    } */
-   return json(postData); 
+   return json({ postData }); 
  } 
   
  export default function Author() {
