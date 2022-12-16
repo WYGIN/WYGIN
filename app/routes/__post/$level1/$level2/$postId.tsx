@@ -1,5 +1,5 @@
 import { client } from "~/utils/PrismicClient";
-import PostBody from ="~/components/PostBody";
+import PostBody from "~/components/PostBody";
 
 import type { MetaFunction } from "@remix-run/cloudflare"; // or cloudflare/deno
 import type { LinksFunction } from "@remix-run/cloudflare"; // or cloudflare/deno
@@ -44,9 +44,15 @@ export function CatchBoundary() {
   
   switch (caught.status) {
     case 401: 
-      return (</>);
+      return (
+        <>
+        </>
+      );
     case 404:
-      return (</>);
+      return (
+        <>
+        </>
+      );
   }
   
   return (
