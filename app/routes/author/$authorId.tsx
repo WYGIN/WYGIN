@@ -2,7 +2,7 @@ import type { LoaderArgs } from "@remix-run/cloudflare";
 import { json } from "@remix-run/cloudflare";
 import { useLoaderData } from "@remix-run/react";
 
-import { client } from "../utils/PrismicClient";
+import { client } from "~/utils/PrismicClient";
 import * as prismic from "@prismicio/client";
 
 import { useCatch } from "@remix-run/react";
