@@ -1,4 +1,4 @@
-export default function PostCardLayout({ data!: any}) {
+export default function PostCardLayout({ data: any }) {
   return(
     <p>
       { JSON.stringify(data) }
