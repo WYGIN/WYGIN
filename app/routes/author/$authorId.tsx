@@ -34,9 +34,9 @@ import PostCardLayout from "~/components/PostCardLayout";
        } 
      `
    }); 
-   if(!postData || !postData.keys('post').length) { 
+  /* if(!postData || !postData.keys('post').length) { 
      throw new Response("", { status: 404 }); 
-   } 
+   } */
    return json(postData); 
  } 
   
