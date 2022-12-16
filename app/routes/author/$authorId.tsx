@@ -32,10 +32,7 @@ import PostCardLayout from "~/components/PostCardLayout";
             }
           }
        } 
-     `, 
-     predicates: [ 
-        
-     ] 
+     `
    }); 
    if(!postData || !postData.keys('post').length) { 
      throw new Response("", { status: 404 }); 
