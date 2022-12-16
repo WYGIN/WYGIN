@@ -1,4 +1,5 @@
-import { client } from "~/utils/PrismicClient"; 
+import { client } from "~/utils/PrismicClient";
+import { PageBody } from "~/components/PageBody";
   
  import type { MetaFunction } from "@remix-run/cloudflare"; // or cloudflare/deno 
  import type { LinksFunction } from "@remix-run/cloudflare"; // or cloudflare/deno 
@@ -33,10 +34,12 @@ import { client } from "~/utils/PrismicClient";
    return json(postData); 
  } 
   
- export default function Page() { 
-   return (
-     <>
-     </>
+ export default function Page() {
+   const { pageBody } = useLoaderData<typeof loader>();
+   return 
+   (
+     <PageBody data={pageBody}>
+     <PageBody/>
    )
  } 
   
