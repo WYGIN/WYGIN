@@ -40,7 +40,7 @@ export const loader = async () => {
           featured_image
           category {
             ...on category {
-              level0
+
               level1
               level2
             }
@@ -56,9 +56,9 @@ export const loader = async () => {
             ...on author {
               name
               profile
-              _meta {
+              
                 uid
-              }
+              
             }
           }
           _meta {
