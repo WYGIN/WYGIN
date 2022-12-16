@@ -18,9 +18,7 @@ import PostCardLayout from "~/components/PostCardLayout";
    const postData = await client.getByUID('author', params.authorId, { 
      graphQuery: `
        {
-         author {
-           name
-         }
+         name
        }
      `
    }); 
