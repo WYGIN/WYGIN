@@ -1,4 +1,4 @@
-import { client } from "../utils/PrismicClient"; 
+import { client } from "~/utils/PrismicClient"; 
   
  import type { MetaFunction } from "@remix-run/cloudflare"; // or cloudflare/deno 
  import type { LinksFunction } from "@remix-run/cloudflare"; // or cloudflare/deno 
