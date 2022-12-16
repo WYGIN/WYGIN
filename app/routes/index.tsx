@@ -68,7 +68,7 @@ export const loader = async () => {
       }
     `,
     predicates: [
-      prismic.predicate.dateBefore( 'document.last_publication_date', dateOfMonth.toISOString().substring(0, 10) )
+      prismic.predicate.dateBefore( 'document.last_publication_date', dateOfPosts.toISOString().substring(0, 10) )
     ]
   });
   return json({ indexPage })
