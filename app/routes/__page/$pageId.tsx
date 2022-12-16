@@ -36,11 +36,10 @@ import PageBody from "~/components/PageBody";
   
  export default function Page() {
    const { pageBody } = useLoaderData<typeof loader>();
-   return 
-   (
+   return (
      <PageBody data={pageBody}>
      </PageBody>
-   );
+   )
  } 
   
  export function CatchBoundary() { 
