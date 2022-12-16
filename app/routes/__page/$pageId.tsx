@@ -35,7 +35,8 @@ import { client } from "../utils/PrismicClient";
   
  export default function Page() { 
    return (
-     
+     <>
+     </>
    )
  } 
   
