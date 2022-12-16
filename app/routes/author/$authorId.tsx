@@ -26,11 +26,7 @@ import PostCardLayout from "~/components/PostCardLayout";
             lastPublicationDate
             links {
               label
-              link {
-                ...on link {
-                  url
-                }
-              }
+              
             }
           }
        }
