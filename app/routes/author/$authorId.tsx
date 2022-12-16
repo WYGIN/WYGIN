@@ -17,7 +17,7 @@ import PostCardLayout from "~/components/PostCardLayout";
  export const loader = async({ params }) => { 
    const postData = await client.getByUID('author', params.authorId, { 
      graphQuery: ` 
-       { 
+       {
           author {
             name
             profile
@@ -31,12 +31,12 @@ import PostCardLayout from "~/components/PostCardLayout";
               }
             }
           }
-       } 
+       }
      `
    }); 
-  /* if(!postData || !postData.keys('post').length) { 
+   if(!postData || !postData.keys('post').length) { 
      throw new Response("", { status: 404 }); 
-   } */
+   } 
    return json(postData); 
  } 
   
