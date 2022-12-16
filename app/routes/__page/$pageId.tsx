@@ -45,9 +45,13 @@ import { client } from "../utils/PrismicClient";
     
    switch (caught.status) { 
      case 401:  
-       return (); 
+       return (
+         <></>
+       ); 
      case 404: 
-       return (); 
+       return (
+         <></>
+       ); 
    } 
     
    return ( 
