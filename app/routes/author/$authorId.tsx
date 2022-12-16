@@ -16,7 +16,7 @@ import PostCardLayout from "~/components/PostCardLayout";
   
  export const loader = async({ params }) => { 
    const postData = await client.getByUID('author', params.authorId, { 
-     graphQuery: ` 
+     graphQuery: `
        {
           author {
             name
