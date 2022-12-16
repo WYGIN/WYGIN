@@ -1,4 +1,5 @@
-import { client } from "../utils/PrismicClient"; 
+import { client } from "~/utils/PrismicClient";
+import PostCardLayout from = "~/components/PostCardLayout";
   
  import type { MetaFunction } from "@remix-run/cloudflare"; // or cloudflare/deno 
  import type { LinksFunction } from "@remix-run/cloudflare"; // or cloudflare/deno 
@@ -30,8 +31,12 @@ import { client } from "../utils/PrismicClient";
    return json(postData); 
  } 
   
- export default function Author() { 
-   return ()
+ export default function Author() {
+   const { authorData } = useLoaderData<typeof loader>();
+   return (
+     <PostCardLayout data={ authorData }>
+     </PostCardLayout>
+   )
  } 
   
  export function CatchBoundary() { 
@@ -39,9 +44,9 @@ import { client } from "../utils/PrismicClient";
     
    switch (caught.status) { 
      case 401:  
-       return (); 
+       return (</>); 
      case 404: 
-       return (); 
+       return (</>); 
    } 
     
    return ( 
