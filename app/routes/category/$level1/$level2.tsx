@@ -44,9 +44,15 @@ import PostCardLayout from "~/components/PostCardLayout";
     
    switch (caught.status) { 
      case 401:  
-       return (<></>); 
+       return (
+         <>
+         </>
+       ); 
      case 404: 
-       return (<></>); 
+       return (
+         <>
+         </>
+       ); 
    } 
     
    return ( 
