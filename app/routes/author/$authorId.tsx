@@ -20,18 +20,6 @@ import PostCardLayout from "~/components/PostCardLayout";
        {
          author {
            name
-           profile
-           bio
-           uid
-           lastPublicationDate
-           links {
-             label
-             link {
-               ...on link {
-                 url
-               }
-             }
-           }
          }
        }
      `
