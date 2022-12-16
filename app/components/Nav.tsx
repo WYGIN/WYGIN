@@ -1,6 +1,6 @@
 export default function Nav({data}: {data!: object}) {
   return(
-    <div className='pt-[50px] max-w-[1520px] mx-auto box-border block'>
+    <nav className='pt-[50px] max-w-[1520px] mx-auto box-border block'>
       <div className='bg-[#546076] pb-[150px] box-border block'>
         <div className='p-0 block'>{/*search bar layout*/}
           <div id='menu-search' className='max-w-[500px] mx-auto p-[20px]'>
@@ -60,6 +60,6 @@ export default function Nav({data}: {data!: object}) {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
