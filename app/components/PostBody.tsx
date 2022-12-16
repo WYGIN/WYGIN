@@ -22,8 +22,7 @@ export default function PostBody({data}: {data!: object}) {
                         <a className='bg-[#63b175] text-white mr-0 inline-block py-[3px] px-[7px] text-lg font-bold no-underline'></a>
                         <span className='bg-[#267438] text-lg font-bold inline-block box-border list-style-none text-white'>
                           <span className='py-[3px] px-[5px] transition-transform inline-block text-lg font-bold text-white list-style-none '>+</span>
-                        </span>
-                        
+                        </span>                        
                       </li>
                     </ul>
                     <ul title='tags' className='text-white list-style-none pl-0 mt-0 mb-[10px] box-border block'>
