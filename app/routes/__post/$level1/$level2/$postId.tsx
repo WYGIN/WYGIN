@@ -1,4 +1,5 @@
-import { client } from "../utils/PrismicClient";
+import { client } from "~/utils/PrismicClient";
+import PostBody from ="~/components/PostBody";
 
 import type { MetaFunction } from "@remix-run/cloudflare"; // or cloudflare/deno
 import type { LinksFunction } from "@remix-run/cloudflare"; // or cloudflare/deno
@@ -31,7 +32,11 @@ export const loader = async({ params }) => {
 }
 
 export default function Post() {
-  return ()
+  const { postData } = useLoaderData<typeof loader>();
+  return (
+    <PostBody data={ postData }>
+    </PostBody>
+  )
 }
 
 export function CatchBoundary() {
@@ -39,9 +44,9 @@ export function CatchBoundary() {
   
   switch (caught.status) {
     case 401: 
-      return ();
+      return (</>);
     case 404:
-      return ();
+      return (</>);
   }
   
   return (
