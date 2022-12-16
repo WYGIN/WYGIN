@@ -26,9 +26,6 @@ export default function Nav({data}: {data!: object}) {
                   <a href={link.link} className='text-white no-underline relative block h-[50px] p-4 font-semibold text-center bg-transparent box-border'>{link.label}</a>
                 </li>
               })
-              <li className='relative block w-full list-none box-border'>
-                <a className='text-white no-underline relative block h-[50px] p-4 font-semibold text-center bg-transparent box-border'></a>
-              </li>
               <li className='bg-[#4b576d] text-white relative block w-full list-none box-border'>{/*dropdown*/}&nbsp;
                 <a className='text-white no-underline relative block h-[50px] p-4 font-semibold text-center bg-transparent box-border'></a>
                 <div className='hidden block bg-[#535353] my-0 mx-auto box-border text-white list-none '>
