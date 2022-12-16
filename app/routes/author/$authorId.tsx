@@ -31,7 +31,7 @@ import { client } from "../utils/PrismicClient";
  } 
   
  export default function Author() { 
-   return (); 
+   return ()
  } 
   
  export function CatchBoundary() { 
