@@ -39,8 +39,8 @@ import { PageBody } from "~/components/PageBody";
    return 
    (
      <PageBody data={pageBody}>
-     <PageBody/>
-   )
+     <PageBody />
+   );
  } 
   
  export function CatchBoundary() { 
