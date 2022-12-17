@@ -6,7 +6,7 @@ import { client } from "~/utils/PrismicClient";
 import * as prismic from "@prismicio/client";
 
 import { useCatch } from "@remix-run/react";
-import PostCardLayout from "~/components/PostCardLayout";
+import PageBody from "~/components/PageBody";
   
  import type { MetaFunction } from "@remix-run/cloudflare"; // or cloudflare/deno 
  import type { LinksFunction } from "@remix-run/cloudflare"; // or cloudflare/deno 
