@@ -7,7 +7,7 @@ export default function PostBody({data}: {data!: object}) {
             <div className='my-[8px] box-border '></div>
             <article className='mb-[30px] box-border block'>
               <header className='box-border block'>
-                <h1 className='text-[#333] mt-[60px] text-5xl tracking-tight mb-[10px] box-border block font-light'>{data.data.title}</h1>
+                <h1 className='text-[#333] mt-[60px] text-5xl tracking-tight mb-[10px] box-border block font-light'>{data.title}</h1>
                 <p className='text-[#333] mt-[3em] font-light text-sm mb-[10px] box-border block'>Last Modified:
                   <span className='box-border text-[#333] text-sm font-light'>{data.lastModificationDate}</span>
                 </p>
@@ -15,7 +15,7 @@ export default function PostBody({data}: {data!: object}) {
                   <div className='box-border block border-l border-[#63b175] mt-[50px] mb-[20px] pl-[20px] box-border block '>
                     <span className='text-lg text-[#333] p-0 m-0 w-[50px] leading-[19px] text-light box-border'> by </span>
                     <span className='text-lg text-[#333] p-0 m-0 w-[50px] leading-[19px] text-light box-border'>
-                      <a href={`https://www.wygin.com/author/${data.data.author.name}`} className='text-[#267438] no-underline bg-transparent '>{data.data.author.name}</a>
+                      <a href={`https://www.wygin.com/author/${data.author.name}`} className='text-[#267438] no-underline bg-transparent '>{data.author.name}</a>
                     </span>
                     <ul title='category' className='mb-0 pl-0 list-style-none text-white mt-0 box-border block'>
                       <li className='mb-[10px] inline-block box-border list-style-none text-lg '>
