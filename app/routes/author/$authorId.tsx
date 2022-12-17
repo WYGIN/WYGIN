@@ -32,8 +32,8 @@ import PostCardLayout from "~/components/PostCardLayout";
  export default function Author() {
    const { authorData } = useLoaderData<typeof loader>();
    return (
-     <PostCardLayout data={ authorData }>
-     </PostCardLayout>
+     <PageBody data={ authorData }>
+     </PageBody>
    )
  } 
   
