@@ -7,7 +7,7 @@ export default function PageBody({data}: {data!: object}) {
             <div className='my-[8px] box-border '></div>
             <article className='mb-[30px] box-border block'>
               <header className='box-border block'>
-                <h1 className='text-[#333] mt-[60px] text-5xl tracking-tight mb-[10px] box-border block font-light'>{data.title}</h1>                  
+                <h1 className='text-[#333] mt-[60px] text-5xl tracking-tight mb-[10px] box-border block font-light'>{data.data.title}</h1>                  
               </header>
               <section className='box-border block text-lg'>
                 <h2 className='text-black text-3xl mt-[2.1em] mb-[1.3em] font-bold relative box-border'>
