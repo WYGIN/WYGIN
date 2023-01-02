@@ -18,11 +18,37 @@ import BlogGrid from "~/components/blogs/GridWithFeaturedPost";
    const postData = await client.get({ 
      graphQuery: ` 
        { 
-         
+          post {
+            title
+            body
+            featured_image
+            category {
+              ...on category {
+                level1
+                level2
+              }
+            }
+            tags {
+              tag {
+                ...on tag {
+                  label
+                }
+              }
+            }
+            author {
+              ...on author {
+                name
+                profile
+                uid
+              }
+            }
+            uid
+          }
        } 
      `, 
      predicates: [ 
-        
+        prismic.predicate.at('my.post.category.level1', params.level1),
+        prismic.predicate.at('my.post.category.level2',params.level2)
      ] 
    }); 
    if(!postData || !postData.keys('post').length) { 

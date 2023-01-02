@@ -1,6 +1,7 @@
 import type { LoaderArgs } from "@remix-run/cloudflare";
 import { json } from "@remix-run/cloudflare";
 import { useLoaderData } from "@remix-run/react";
+import BlogGrid from "~/components/blogs/GridWithFeaturedPost";
 
 import { client } from "../utils/PrismicClient";
 import * as prismic from "@prismicio/client";
@@ -72,9 +73,7 @@ export const loader = async () => {
 export default function Index() {
   const { indexPage } = useLoaderData<typeof loader>();
   return (
-    <>
-      
-    </>
+    <BlogGrid posts={ indexPage }></BlogGrid>
   )
 }
 export function ErrorBoundary({ error }) {

@@ -6,7 +6,7 @@ import { client } from "~/utils/PrismicClient";
 import * as prismic from "@prismicio/client";
 
 import { useCatch } from "@remix-run/react";
-import Blogpage from "~/components/view/BlogPage";
+import Author from "~/components/view/Author";
   
  import type { MetaFunction } from "@remix-run/cloudflare"; // or cloudflare/deno 
  import type { LinksFunction } from "@remix-run/cloudflare"; // or cloudflare/deno 
@@ -32,8 +32,8 @@ import Blogpage from "~/components/view/BlogPage";
  export default function Author() {
    const { authorData } = useLoaderData<typeof loader>();
    return (
-     <BlogPage data={ authorData }>
-     </BlogPage>
+     <Author data={ authorData }>
+     </Author>
    )
  } 
   
