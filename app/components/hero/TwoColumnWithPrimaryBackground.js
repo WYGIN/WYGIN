@@ -7,12 +7,12 @@ import HeaderBase, {
   NavLink as NavLinkBase,
   PrimaryLink as PrimaryLinkBase
 } from "../headers/light.js";
-import { Container as ContainerBase, ContentWithVerticalPadding, Content2Xl } from "components/misc/Layouts.js";
-import { SectionHeading } from "components/misc/Headings.js";
-import { SectionDescription } from "components/misc/Typography.js";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import logoImageSrc from "images/logo-light.svg";
-import serverIllustrationImageSrc from "images/server-illustration-2.svg";
+import { Container as ContainerBase, ContentWithVerticalPadding, Content2Xl } from "~/components/misc/Layouts.js";
+import { SectionHeading } from "~/components/misc/Headings.js";
+import { SectionDescription } from "~/components/misc/Typography.js";
+import { PrimaryButton as PrimaryButtonBase } from "~/components/misc/Buttons.js";
+import logoImageSrc from "~/images/logo-light.svg";
+import serverIllustrationImageSrc from "~/images/server-illustration-2.svg";
 
 const PrimaryBackgroundContainer = tw.div`-mx-8 px-8 bg-primary-900 text-gray-100`;
 const Header = tw(HeaderBase)`max-w-none -mt-8 py-8 -mx-8 px-8`;

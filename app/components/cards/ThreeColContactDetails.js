@@ -3,10 +3,10 @@ import styled from "styled-components";
 import tw from "twin.macro";
 //eslint-disable-next-line
 import { css } from "styled-components/macro"; //eslint-disable-line
-import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
-import { SectionDescription } from "components/misc/Typography.js";
+import { SectionHeading, Subheading as SubheadingBase } from "~/components/misc/Headings.js";
+import { SectionDescription } from "~/components/misc/Typography.js";
 
-import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
+import { ReactComponent as SvgDecoratorBlob3 } from "~/images/svg-decorator-blob-3.svg";
 
 const Container = tw.div`relative`;
 
