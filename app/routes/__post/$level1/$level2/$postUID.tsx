@@ -24,7 +24,7 @@ export const loader = async({ params }) => {
 export default function Post() {
   const { postData } = useLoaderData<typeof loader>();
   return (
-    <BlogPost postData={postData}></BlogPost>
+    <BlogPost data={ postData }></BlogPost>
   )
 }
 

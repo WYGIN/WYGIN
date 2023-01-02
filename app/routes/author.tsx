@@ -9,6 +9,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -25,7 +26,9 @@ export default function App() {
       </head>
       <body>
         <PrismicProvider>
-          <Outlet />
+          <AnimationRevealPage>
+            <Outlet />
+          </AnimationRevealPage>
         </PrismicProvider>
         <ScrollRestoration />
         <Scripts />
