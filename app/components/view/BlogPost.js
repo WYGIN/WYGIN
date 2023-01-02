@@ -47,7 +47,7 @@ const Text = styled.div`
   }
 `;
 
-export default BlogPost = ({ postData }) => {
+export default BlogPost = ({ data }) => {
   return (
     <>
       <div className='bg-white pb-[80px] w-[100%] relative max-w-[1520px] mx-auto box-border block'>
