@@ -1,6 +1,5 @@
 import { client } from "~/utils/PrismicClient";
-import PostBody from "~/components/PostBody";
-
+import { BlogPost } from "~/components/view/BlogPost";
 import type { MetaFunction } from "@remix-run/cloudflare"; // or cloudflare/deno
 import type { LinksFunction } from "@remix-run/cloudflare"; // or cloudflare/deno
 
@@ -15,16 +14,7 @@ export const meta: MetaFunction = () => {
 };
 
 export const loader = async({ params }) => {
-  const postData = await client.getByUID('post', params.postId, {
-    graphQuery: `
-      {
-        
-      }
-    `,
-    predicates: [
-      
-    ]
-  });
+  const postData = await client.getByUID('post', params.postUID);
   if(!postData || !postData.keys('post').length) {
     throw new Response("", { status: 404 });
   }
@@ -34,8 +24,7 @@ export const loader = async({ params }) => {
 export default function Post() {
   const { postData } = useLoaderData<typeof loader>();
   return (
-    <PostBody data={ postData }>
-    </PostBody>
+    <BlogPost postData={postData}></BlogPost>
   )
 }
 
