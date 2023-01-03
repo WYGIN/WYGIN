@@ -9,7 +9,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import AnimationRevealPage from "~/helpers/AnimationRevealPage.js";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
