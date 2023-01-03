@@ -2,7 +2,7 @@ import React from "react";
 import { Container, ContentWithPaddingXl } from "~/components/misc/Layouts";
 import tw from "twin.macro";
 import styled from "styled-components";
-import { css } from "styled-components/macro";
+import css from "styled-components/macro";
 import { SectionHeading, Subheading as SubheadingBase } from "~/components/misc/Headings";
 import { SectionDescription } from "~/components/misc/Typography";
 import { ReactComponent as SvgDotPatternIcon } from "~/images/dot-pattern.svg";
