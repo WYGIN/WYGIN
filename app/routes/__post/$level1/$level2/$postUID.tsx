@@ -1,5 +1,5 @@
 import { client } from "~/utils/PrismicClient";
-import { BlogPost } from "~/components/view/BlogPost";
+import BlogPost from "~/components/view/BlogPost";
 import type { MetaFunction } from "@remix-run/cloudflare"; // or cloudflare/deno
 import type { LinksFunction } from "@remix-run/cloudflare"; // or cloudflare/deno
 
