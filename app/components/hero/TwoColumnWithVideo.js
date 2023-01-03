@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 //eslint-disable-next-line
-import { css } from "styled-components/macro";
+import css from "styled-components/macro";
 
 import Header from "../headers/light.js";
 
@@ -11,8 +11,8 @@ import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 
 import { ReactComponent as PlayIcon } from "feather-icons/dist/icons/play-circle.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
-import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
-import { ReactComponent as SvgDecoratorBlob2 } from "../../images/dot-pattern.svg";
+import SvgDecoratorBlob1 from "../../images/svg-decorator-blob-1.svg";
+import SvgDecoratorBlob2 from "../../images/dot-pattern.svg";
 import DesignIllustration from "../../images/design-illustration.svg";
 
 const Container = tw.div`relative`;

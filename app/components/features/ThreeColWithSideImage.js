@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 //eslint-disable-next-line
-import { css } from "styled-components/macro";
+import css from "styled-components/macro";
 import { SectionHeading, Subheading as SubheadingBase } from "~/components/misc/Headings.js";
 import { SectionDescription } from "~/components/misc/Typography.js";
 
 import defaultCardImage from "~/images/shield-icon.svg";
 
-import { ReactComponent as SvgDecoratorBlob3 } from "~/images/svg-decorator-blob-3.svg";
+import SvgDecoratorBlob3 from "~/images/svg-decorator-blob-3.svg";
 
 import SupportIconImage from "~/images/support-icon.svg";
 import ShieldIconImage from "~/images/shield-icon.svg";
