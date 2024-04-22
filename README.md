@@ -1,23 +1,37 @@
 # I'm Sai Kiran Maggidi!👋
-I'm a self-taught programmer who is truly passonated about open source.
+I am a self-taught programmer with a strong passion for open-source software development. I have invested significant time and effort in learning advanced programming concepts and techniques. I strongly believe in the potential of open-source software to drive innovation and bring about positive change. I am always looking for new opportunities to contribute to the open-source community.
 
 ## About Me 
-```go
+```Go
 
 // import "fmt"
 
 var SaiKiranMaggidi AboutMe
 
+type Status int
+const (
+    Focus Status = iota
+    Upskill
+    CareerBreak
+)
+
+var (
+    EstablishedEnterprises = 1
+    Startup = 999
+)
+
 func init() {
     SaiKiranMaggidi.Name = "Sai Kiran Maggidi"
     SaiKiranMaggidi.Pronouns = "He | Him"
-    SaiKiranMaggidi.Code = []string{"GoLang", "TypeScript", "Java", "Kotlin", "Rust", "C", "C++", "Android Development", "Assembley Script"}
+    SaiKiranMaggidi.Status = Focus
+    SaiKiranMaggidi.OpenToWork = Startup > EstablishedEnterprises
+    SaiKiranMaggidi.Code = []string{"GoLang", "TypeScript", "Java", "Kotlin", "Rust", "C", "C++", "Android Development", "Assembly Script"}
     SaiKiranMaggidi.Tools = []string{
         "Buildkit", "Buildpacks", "Docker", "Buildx", "Go Container Registry",
         "Redux", "Zustand", "RTK",
-        "NodeJs", "DenoJs",
-        "Storybook", "browserstack", "CodeCov",
-        "Jest", "Mocha", "Chai", "PlayWright", "vitest",
+        "Node", "Deno", "Bun",
+        "Storybook", "BrowserStack", "CodeCov",
+        "Jest", "Mocha", "Chai", "PlayWright", "Vitest",
         "webpack", "vite", "rollup", "Bun", "ExpressJS",
         "Styled-Components", "Tailwind CSS",
         "DrizzleORM", "PrismaORM",
@@ -31,7 +45,7 @@ func init() {
     SaiKiranMaggidi.CurrentIntrests = []string{"Backend", "DevOps"}
     SaiKiranMaggidi.ContentManagementSystems = []string{"PrismicCMS", "PayloadCMS", "ButterCMS", "Sanity", "StoryBlok", "Contentful", "Hygraph CMS", "Kontent", "Strapi", "Directus", "Magnolia", "Enonic", "Zesty", "ApostropheCMS", "Yext", "Wordpress", "Netlifycms", "Contentrain"}
     SaiKiranMaggidi.AuthLibraries = []string{"NextAuth", "LuciaAuth", "Remix-oauth2-auth", "Auth0"}
-    SaiKiranMaggidi.Databases = []string{"MySQL", "PostgreSql", "MongoDB", "LibSQL", "Neo4j", "Redis", "CockroachDB", "Firebase"}
+    SaiKiranMaggidi.Databases = []string{"MySQL", "PostgreSQL", "MongoDB", "LibSQL", "Neo4j", "Redis", "CockroachDB", "Firebase"}
     SaiKiranMaggidi.Git = []string{"GitHub", "GitLab", "BitBucket"}
     SaiKiranMaggidi.Misc = []string{"Cloudflare Workers", "Netlify", "Vercel", "TursoDB", "PlanetScale", "UpStash", "DenoCloud", "SquidCloud", "Heroku", "Google Cloud", "shuttle.rs", "PacketBase", "NxJS", "Supabase", "Algolia Search", "GraphQL", "REST", "gRPC", "Partytown", "PostCSS", "ESLint", "Husky"}
     SaiKiranMaggidi.Contributions = map[Company][]Roles{
